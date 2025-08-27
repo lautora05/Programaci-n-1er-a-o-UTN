@@ -41,60 +41,11 @@ class Ventana(QWidget):
         layout.addWidget(nombre_input, 1, 1)  # Fila 1, columna 1
        
 
-       
-
-
-
-# -----------------------------------------------------------------------------
-# Ejercicio 3: Selección de género
-# -----------------------------------------------------------------------------
-# Teoría:
-# - QRadioButton permite seleccionar una opción.
-# - QButtonGroup agrupa los radio buttons para que solo uno esté activo.
-#
-# Consigna:
-# - Agregar dos QRadioButton: “Masculino” y “Femenino”, en la misma fila.
-# - Usar QButtonGroup para agruparlos.
-
-# -----------------------------------------------------------------------------
-# Ejercicio 4: Selección de país
-# -----------------------------------------------------------------------------
-# Teoría:
-# - QComboBox permite elegir una opción de una lista desplegable.
-#
-# Consigna:
-# - Agregar QLabel “País:” y QComboBox con al menos 5 países.
-
-# -----------------------------------------------------------------------------
-# Ejercicio 5: Checkbox de términos
-# -----------------------------------------------------------------------------
-# Teoría:
-# - QCheckBox permite aceptar o rechazar condiciones.
-#
-# Consigna:
-# - Agregar QCheckBox: “Acepto los términos y condiciones”.
-
-# -----------------------------------------------------------------------------
-# Ejercicio 6: Botón de envío y validación
-# -----------------------------------------------------------------------------
-# Teoría:
-# - QPushButton ejecuta una función al hacer clic.
-# - QMessageBox muestra mensajes emergentes.
-#
-# Consigna:
-# - Agregar QPushButton “Registrarse”.
-# - Al hacer clic, validar que todos los campos estén completos y el checkbox marcado.
-# - Mostrar mensaje de éxito o error.
-
-# -----------------------------------------------------------------------------
-# Ejercicio 7: Personalización visual
-# -----------------------------------------------------------------------------
-# Consigna:
-# - Cambiar colores de fondo, fuentes y tamaño de los widgets.
-# - Centrar el formulario en la ventana.
+    
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ventana = Ventana()
     ventana.show()
+
     sys.exit(app.exec_())
